@@ -14,7 +14,8 @@ namespace WpfSqliteTestApp
         {
             using (IDbConnection conn = new SQLiteConnection(LoadConnectionString()))
             {
-                var output = conn.Query<ItemModel>("Select * from Items", new DynamicParameters());
+
+                var output = conn.Query<ItemModel>("Select * from items", new DynamicParameters());
                 return output.ToList();
             }
         }

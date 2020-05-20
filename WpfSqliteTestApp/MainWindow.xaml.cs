@@ -17,9 +17,13 @@ namespace WpfSqliteTestApp
 {
     public partial class MainWindow : Window
     {
+
+        public List<ItemModel> items { get; set; }
+
         public MainWindow()
         {
             InitializeComponent();
+            LoadItemsList();
             MouseDown += Window_MouseDown;
         }
 
@@ -27,6 +31,17 @@ namespace WpfSqliteTestApp
         {
             if (e.ChangedButton == MouseButton.Left)
                 DragMove();
+        }
+
+        private void LoadItemsList()
+        {
+            items = SqlLiteDataAccess.LoadAllItems();
+            WireUpItemsList();
+        }
+
+        private void WireUpItemsList()
+        {
+
         }
     }
 }
