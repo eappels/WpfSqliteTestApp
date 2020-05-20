@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfSqliteTestApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="375" Width="460"
+        Title="MainWindow" Height="375" Width="450"
         WindowStyle="None" AllowsTransparency="True" Background="Transparent" WindowStartupLocation="CenterScreen">
     <Border BorderBrush="#FF2F4159" BorderThickness="5" CornerRadius="10">
         <Grid Background="#FF2F4159" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
