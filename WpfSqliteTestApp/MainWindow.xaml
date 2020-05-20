@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfSqliteTestApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="375" Width="600"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent" WindowStartupLocation="CenterScreen">
+    <Border BorderBrush="#FF2F4159" BorderThickness="5" CornerRadius="10">
+        <Grid Background="#FF2F4159" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Label Content="Title:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" FontFamily="Century Gothic" Foreground="White"/>
+            <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Margin="10,40,0,0"/>
+            <Label Content="Username:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,68,0,0" FontFamily="Century Gothic" Foreground="White"/>
+            <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Margin="10,98,0,0"/>
+            <Label Content="Password:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,126,0,0" FontFamily="Century Gothic" Foreground="White"/>
+            <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Margin="10,156,0,0"/>
+            <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,194,0,0" Height="113" Width="200"/>
+            <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="10,321,0,0" Height="23"/>
+
+        </Grid>
+    </Border>
 </Window>
